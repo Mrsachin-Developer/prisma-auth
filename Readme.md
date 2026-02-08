@@ -41,13 +41,3 @@ GET /api/auth/me (protected)
 npm install  
 npx prisma migrate dev  
 npm run dev
-"""
-
-doc = SimpleDocTemplate("/mnt/data/README_Day1_PrismAuth.pdf")
-styles = getSampleStyleSheet()
-elements = [Paragraph("Day 1 – Prisma Auth API", styles["Title"]), Spacer(1,12),
-Preformatted(content, styles["Code"])]
-
-doc.build(elements)
-
-"/mnt/data/README_Day1_PrismAuth.pdf"
